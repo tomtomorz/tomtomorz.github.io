@@ -1,9 +1,9 @@
 <title>膜拜tomtom</title>
-<h1><a>膜拜</a> <a>t</a><a style="color:red">omtom</a><a> !</a> </h1>
+<h1><a>膜拜</a> <a>t</a><a style="color:red">omtom</a> <a>!</a></h1>
 
 这是一个毫无意义的网站，不过你可以在此膜拜雅礼中学的红太阳 t<span style="color:red">omtom</span>。
 <br>
-你已经膜拜了 t<span style="color:red">omtom</span> <span id="counter">0</span> 次。
+你已经膜拜了 t<span style="color:red">omtom</span> <span id="cnt">0</span> 次。
 
 <br>
 <br>
@@ -14,14 +14,14 @@
 <script>
 step = 1
 function orz(){
-	counter = document.getElementById("counter");
-	counter.innerHTML = parseInt(counter.innerHTML) + step;
+	cnt = document.getElementById("cnt");
+	cnt.innerHTML = parseInt(cnt.innerHTML) + step;
 }
 function add() {
-	counter = document.getElementById("counter");
-	if (parseInt(counter.innerHTML) >= step * 2) {
+	cnt = document.getElementById("cnt");
+	if (parseInt(cnt.innerHTML) >= step * 2) {
 		step = step * 2;
-		counter.innerHTML = parseInt(counter.innerHTML) - step;
+		cnt.innerHTML = parseInt(cnt.innerHTML) - step;
 	}
 }
 </script>
